@@ -15,3 +15,41 @@ mari kita mulai dari hal yg paling dasar yaitu:
 - accessible content pada canvas, sama seperti <img>, <video>, dsbnya. canvas juga memiliki fitur untuk memberitahu users, jika canvas tidak support pada suatu browser dengan cara menyedikan fallback text yg akan dimunculkan jika medianya ga bisa ke load atau dimunculin. bisa dibilang mirip dengan attribute alt pada img. cara bikinnya cukup mudah cukup memasukan kontennya kedalam tag <canvas>fallback kamu</canvas> seperti ini. perlu di ingat bahwa ketika kita menyediakan fallback maka kita wajib menambahkan closing tag pada canvas (</canvas>) jika tidak maka fallback tidak akan pernah dimunculkan.
 
 untuk lebih lanjut bisa pelajari code yg ada pada folder week-1/day-1.js
+
+dokumentasi & sumber belajar:
+
+https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Basic_usage
+
+https://www.w3schools.com/tags/ref_canvas.asp
+
+catatan:
+
+Cara menggambar rectangle
+
+1. fillRect()
+   Fungsi fillRect() digunakan untuk menggambar persegi panjang atau kotak yang terisi warna.
+
+2. clearRect()
+   Fungsi clearRect() digunakan untuk menghapus bagian dari canvas. dan bagian itu jadi transparan lagi di dalam canvas.
+
+3. strokeRect()
+   Fungsi strokeRect() digunakan untuk menggambar persegi panjang hanya dengan garis tepi (outline), tanpa mengisi bagian dalamnya.
+
+Cara menggambar path
+
+4. beginPath()
+   Membuat jalur baru dan menghapus jalur sebelumnya.
+   Semua perintah menggambar setelahnya akan diarahkan ke jalur ini.
+
+5. Path Methods (Metode untuk menggambar jalur)
+   Contoh: moveTo(x, y) untuk memindahkan "pena" tanpa menggambar garis, atau lineTo(x, y) untuk menggambar garis lurus.
+
+6. closePath()
+   Menambahkan garis lurus dari posisi saat ini ke titik awal path.
+   Berguna untuk menutup jalur agar menjadi bentuk tertutup.
+
+7. stroke()
+   Menggambar outline atau garis tepi jalur.
+
+8. fill()
+   Mengisi area tertutup dari path dengan warna.

@@ -4,16 +4,21 @@
     <meta charset="utf-8" />
     <title>Canvas tutorial</title>
     <style>
-      canvas {
-        width: 100%;
-        height: 20vh;
-        object-fit: contain;
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         border: 1px solid black;
+        margin-bottom: 10px;
+        padding: 20px;
       }
     </style>
   </head>
   <body>
-    <canvas id="canvas" width="150" height="150"></canvas>
-    <script src="/week-1/day-1.js"></script>
+    <canvas id="canvas-1" width="200" height="220"></canvas>
+    <canvas id="canvas-2" width="200" height="220"></canvas>
+    <script src="/week-1/day-1/basic-canvas.js"></script>
+    <script src="/week-1/day-1/drawing-shape.js"></script>
   </body>
 </html>
