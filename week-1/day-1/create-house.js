@@ -7,7 +7,7 @@ window.addEventListener("load", () => {
   header.innerText = "Day 3 - Create House";
   container.appendChild(header);
 
-  const canvas = document.getElementById("my-house");
+  const canvas = document.getElementById("canvas-3");
 
   container.appendChild(canvas);
 
